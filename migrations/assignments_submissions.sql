@@ -12,5 +12,6 @@ CREATE TABLE assignment_submissions (
   assignment_id INTEGER REFERENCES assignments(id) ON DELETE CASCADE,
   student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
   duration INTEGER,
-  submission_date DATE
+  submission_date DATE,
+  
 );
